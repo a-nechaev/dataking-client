@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  dkclient:
+    env_file:
+      - .env
+    build:
+      dockerfile: Dockerfile
+      context: '.'
+    image: dkclient
+    restart: always
+    tty: true
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/app
