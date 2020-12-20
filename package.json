@@ -1,7 +1,6 @@
 {
   "name": "dataking-client",
   "version": "1.0.0",
-  "description": "",
   "main": "client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "ws": "^7.4.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-nechaev/dataking-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a-nechaev/dataking-client/issues"
+  },
+  "homepage": "https://github.com/a-nechaev/dataking-client#readme",
+  "description": ""
 }
