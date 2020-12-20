@@ -12,5 +12,3 @@ services:
     tty: true
     ports:
       - "8082:80"
-    volumes:
-      - .:/app
