@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <script src="/web.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <title>Test page</title>
 
@@ -11,7 +12,16 @@
 
 <script>
     window.dataking.send('view', 'action', {'user_id':1, 'url':'/'});
+
+
+    $(function () {
+        $('#send').click(function () {
+            window.dataking.send('web', 'cmd', JSON.parse($('#cmd').val()));
+        });
+    });
 </script>
 
+<textarea id="cmd" rows="5" cols="20"></textarea><br />
+<input type="button" id="send" value="Send" />
 </body>
 </html>
